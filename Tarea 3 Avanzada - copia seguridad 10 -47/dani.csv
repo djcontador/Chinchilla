@@ -1,0 +1,6 @@
+nombre:str;alto: float;peso: int
+daniela;1.64;59
+alfredo;1.67;65
+sophia;1.80;55
+giuliana;1.66;59
+leito;1.20;40
