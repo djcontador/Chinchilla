@@ -5,10 +5,11 @@ portafolio = {'tareas': [], 'actividades': [], 'controles': [], 'examen': []}
 
 
 class Evaluacion:
-    def __init__(self, numero, contenido, dificultad):
+    def __init__(self, numero, contenido, dificultad, fecha):
         self.numero = numero
         self.contenido = contenido
         self.dificultad = dificultad
+        self.fecha = fecha
 
         self.nota_esperada = None
         self.nota_real = None
@@ -16,8 +17,8 @@ class Evaluacion:
 
 
 class Actividad(Evaluacion):
-    def __init__(self, numero, contenido, dificultad):
-        super().__init__(numero, contenido, dificultad)
+    def __init__(self, numero, contenido, dificultad, fecha):
+        super().__init__(numero, contenido, dificultad, fecha)
         self.tipo = 'actividad'
 
     def progreso(self, manejo_contenidos, nivel_programacion, confianza):
@@ -28,8 +29,8 @@ class Actividad(Evaluacion):
 
 
 class Tarea(Evaluacion):
-    def __init__(self, numero, contenido, dificultad):
-        super().__init__(numero, contenido, dificultad)
+    def __init__(self, numero, contenido, dificultad, fecha):
+        super().__init__(numero, contenido, dificultad, fecha)
         self.tipo = 'tarea'
 
     def progreso(self, manejo_contenidos, nivel_programacion, horas_tarea):
@@ -40,8 +41,8 @@ class Tarea(Evaluacion):
 
 
 class Control(Evaluacion):
-    def __init__(self, numero, contenido, dificultad):
-        super().__init__(numero, contenido, dificultad)
+    def __init__(self, numero, contenido, dificultad, fecha):
+        super().__init__(numero, contenido, dificultad, fecha)
         self.tipo = 'control'
 
     def progreso(self, manejo_contenidos, nivel_programacion, confianza):
@@ -52,11 +53,11 @@ class Control(Evaluacion):
 
 # todo
 class Examen(Evaluacion):
-    def __init__(self, numero, contenido, dificultad):
-        super().__init__(numero, contenido, dificultad)
+    def __init__(self, numero, contenido, dificultad, fecha):
+        super().__init__(numero, contenido, dificultad, fecha)
         self.tipo = 'examen'
         # en este caso el contenido es una lista de contenidos en funcion de lo pedido [('3'), ('6')]
 
 # recordar setear la dificultad por 'parametros_dificultad.csv'
-actividades = [(4, Actividad('01', '1', 2)), (11, Actividad('02', '2', 2)), (18, Actividad('03', '3', 3)),
-               (25, Actividad('04', '4', 5)), (32, Actividad('05', '5', 7)), (39, Actividad('06', '6', 10))]
+actividades = [(4, Actividad('01', '1', 2, 4)), (11, Actividad('02', '2', 2, 11)), (18, Actividad('03', '3', 3, 18)),
+               (25, Actividad('04', '4', 5, 25)), (32, Actividad('05', '5', 7, 32)), (39, Actividad('06', '6', 10, 39))]
