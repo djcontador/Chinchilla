@@ -10,43 +10,67 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/T04 2$try.coverage" NAME="try Coverage Results" MODIFIED="1495296108747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$layout.coverage" NAME="layout Coverage Results" MODIFIED="1495123115055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Ayudantia_IIC2233-master" />
+    <SUITE FILE_PATH="coverage/T04 2$generador_eventos.coverage" NAME="generador_eventos Coverage Results" MODIFIED="1495291174150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$trial.coverage" NAME="trial Coverage Results" MODIFIED="1495061686683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$grid.coverage" NAME="grid Coverage Results" MODIFIED="1495133139103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Ayudantia_IIC2233-master" />
+    <SUITE FILE_PATH="coverage/T04 2$creador_parametros.coverage" NAME="creador parametros Coverage Results" MODIFIED="1495255529830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$lector_parametros.coverage" NAME="lector_parametros Coverage Results" MODIFIED="1495249541475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$contenido_interfaces_grafica.coverage" NAME="contenido interfaces grafica Coverage Results" MODIFIED="1495118547146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Ayudantia_IIC2233-master" />
+    <SUITE FILE_PATH="coverage/T04 2$lector_escenarios.coverage" NAME="lector_escenarios Coverage Results" MODIFIED="1494953419792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/T04 2$integrantes.coverage" NAME="integrantes Coverage Results" MODIFIED="1494979503086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/T04 2$hola.coverage" NAME="hola Coverage Results" MODIFIED="1494955636379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/T04$hola.coverage" NAME="hola Coverage Results" MODIFIED="1494716857873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/T04 2$try.coverage" NAME="try Coverage Results" MODIFIED="1494972925131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/T04 2$Simulacion.coverage" NAME="Simulacion Coverage Results" MODIFIED="1494993961087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/T04 2$clases.coverage" NAME="clases Coverage Results" MODIFIED="1494988296811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$Simulacion.coverage" NAME="Simulacion Coverage Results" MODIFIED="1495296760547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$clases.coverage" NAME="clases Coverage Results" MODIFIED="1495070197015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/T04 2$nota_esperada.coverage" NAME="nota_esperada Coverage Results" MODIFIED="1494987201621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/T04 2$creador_parametros.coverage" NAME="creador parametros Coverage Results" MODIFIED="1494802801450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/T04 2$lector_parametros.coverage" NAME="lector_parametros Coverage Results" MODIFIED="1494974619544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/T04 2$lector_escenarios.coverage" NAME="lector_escenarios Coverage Results" MODIFIED="1494953419792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/T04 2$push_button.coverage" NAME="push button Coverage Results" MODIFIED="1495119618605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Ayudantia_IIC2233-master" />
+    <SUITE FILE_PATH="coverage/T04 2$actividad_11.coverage" NAME="actividad 11 Coverage Results" MODIFIED="1495148511558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../AC11" />
     <SUITE FILE_PATH="coverage/T04 2$prueba.coverage" NAME="prueba Coverage Results" MODIFIED="1494801131133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="T04 2" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="clases.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clases.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-298">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#2428#3011#0" expanded="false" />
-                <element signature="e#3224#3262#0" expanded="false" />
-                <element signature="e#3949#4832#0" expanded="false" />
-                <element signature="e#4884#5673#0" expanded="false" />
-                <element signature="e#5725#6303#0" expanded="false" />
-                <element signature="e#6382#8343#0" expanded="false" />
-                <element signature="e#8372#8478#0" expanded="false" />
-                <element signature="e#8508#8614#0" expanded="false" />
-                <element signature="e#8640#8752#0" expanded="false" />
-                <element signature="e#8775#8927#0" expanded="false" />
-                <element signature="e#8949#9188#0" expanded="false" />
+                <element signature="e#5142#5180#0" expanded="false" />
+                <element signature="e#7933#8511#0" expanded="false" />
+                <element signature="e#13000#13106#0" expanded="false" />
+                <element signature="e#13136#13242#0" expanded="false" />
+                <element signature="e#13268#13380#0" expanded="false" />
+                <element signature="e#13403#13555#0" expanded="false" />
+                <element signature="e#13577#13816#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="try.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/try.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,28 +78,29 @@
       <file leaf-file-name="evaluaciones.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluaciones.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="61" />
+            <state relative-caret-position="136">
+              <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simulacion.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Simulacion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Simulacion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="158" column="67" lean-forward="false" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
+            <state relative-caret-position="395">
+              <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding>
-                <element signature="e#0#91#0" expanded="true" />
-                <element signature="e#1440#2331#0" expanded="false" />
-                <element signature="e#2667#2886#0" expanded="false" />
-                <element signature="e#2956#3183#0" expanded="false" />
-                <element signature="e#3233#3420#0" expanded="false" />
-                <element signature="e#3478#3681#0" expanded="false" />
-                <element signature="e#3753#3984#0" expanded="false" />
-                <element signature="e#278#5954#0" expanded="false" />
-                <marker date="1494993834453" expanded="false" signature="2383:2601" ph="..." />
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#1903#2794#0" expanded="false" />
+                <element signature="e#2855#3064#0" expanded="false" />
+                <element signature="e#3130#3349#0" expanded="false" />
+                <element signature="e#3419#3646#0" expanded="false" />
+                <element signature="e#3696#3883#0" expanded="false" />
+                <element signature="e#3941#4144#0" expanded="false" />
+                <element signature="e#4216#4447#0" expanded="false" />
+                <element signature="e#4519#4750#0" expanded="false" />
+                <element signature="e#6752#6958#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -84,11 +109,23 @@
       <file leaf-file-name="generador_eventos.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generador_eventos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="-17">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <element signature="e#53#575#0" expanded="false" />
+                <element signature="e#345#545#0" expanded="false" />
+                <element signature="e#602#739#0" expanded="false" />
+                <element signature="e#793#867#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lector_parametros.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lector_parametros.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,26 +142,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lector_parametros.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lector_parametros.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="17" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lector_escenarios.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lector_escenarios.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -137,6 +154,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>escenario.esce</find>
+      <find>contador</find>
+      <find>print</find>
+      <find>label1</find>
+      <find>vbox</find>
+      <find>label_intentos</find>
+      <find>Qlabel</find>
+      <find>progreso</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -144,19 +168,26 @@
       <list>
         <option value="$PROJECT_DIR$/lector parametros.py" />
         <option value="$PROJECT_DIR$/nota esperada.py" />
-        <option value="$PROJECT_DIR$/creador parametros.py" />
         <option value="$PROJECT_DIR$/prueba.py" />
-        <option value="$PROJECT_DIR$/lector_parametros.py" />
-        <option value="$PROJECT_DIR$/generador_eventos.py" />
-        <option value="$PROJECT_DIR$/lector_escenarios.py" />
         <option value="$PROJECT_DIR$/hola.py" />
         <option value="$PROJECT_DIR$/ayudantia interfaces graficas.py" />
-        <option value="$PROJECT_DIR$/try.py" />
-        <option value="$PROJECT_DIR$/evaluaciones.py" />
         <option value="$PROJECT_DIR$/integrantes.py" />
         <option value="$PROJECT_DIR$/nota_esperada.py" />
-        <option value="$PROJECT_DIR$/Simulacion.py" />
+        <option value="$PROJECT_DIR$/lector_escenarios.py" />
+        <option value="$PROJECT_DIR$/trial.py" />
+        <option value="$PROJECT_DIR$/evaluaciones.py" />
+        <option value="$PROJECT_DIR$/../Ayudantia_IIC2233-master/contenido interfaces grafica.py" />
+        <option value="$PROJECT_DIR$/../Ayudantia_IIC2233-master/push button.py" />
+        <option value="$PROJECT_DIR$/../Ayudantia_IIC2233-master/layout.py" />
+        <option value="$PROJECT_DIR$/../Ayudantia_IIC2233-master/grid.py" />
+        <option value="$PROJECT_DIR$/../Ayudantia_IIC2233-master/actividad 11.py" />
+        <option value="$PROJECT_DIR$/../AC11/actividad 11.py" />
+        <option value="$PROJECT_DIR$/lector_parametros.py" />
+        <option value="$PROJECT_DIR$/creador parametros.py" />
+        <option value="$PROJECT_DIR$/generador_eventos.py" />
+        <option value="$PROJECT_DIR$/try.py" />
         <option value="$PROJECT_DIR$/clases.py" />
+        <option value="$PROJECT_DIR$/Simulacion.py" />
       </list>
     </option>
   </component>
@@ -220,7 +251,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Simulacion">
-    <configuration default="false" name="clases" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Simulacion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -233,12 +264,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="T04" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clases.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Simulacion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="integrantes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="generador_eventos" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -251,7 +282,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="T04" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/integrantes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generador_eventos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -274,7 +305,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Simulacion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="try" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -287,12 +318,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="T04" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Simulacion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="nota_esperada" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="creador parametros" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -305,7 +336,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="T04" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nota_esperada.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creador parametros.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -525,18 +556,18 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.clases" />
-      <item index="1" class="java.lang.String" itemvalue="Python.integrantes" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Simulacion" />
+      <item index="1" class="java.lang.String" itemvalue="Python.generador_eventos" />
       <item index="2" class="java.lang.String" itemvalue="Python.lector_parametros" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Simulacion" />
-      <item index="4" class="java.lang.String" itemvalue="Python.nota_esperada" />
+      <item index="3" class="java.lang.String" itemvalue="Python.try" />
+      <item index="4" class="java.lang.String" itemvalue="Python.creador parametros" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Simulacion" />
-        <item index="1" class="java.lang.String" itemvalue="Python.clases" />
-        <item index="2" class="java.lang.String" itemvalue="Python.nota_esperada" />
-        <item index="3" class="java.lang.String" itemvalue="Python.integrantes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.try" />
+        <item index="2" class="java.lang.String" itemvalue="Python.generador_eventos" />
+        <item index="3" class="java.lang.String" itemvalue="Python.creador parametros" />
         <item index="4" class="java.lang.String" itemvalue="Python.lector_parametros" />
       </list>
     </recent_temporary>
@@ -557,9 +588,18 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -567,7 +607,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38643533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22870663" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -589,40 +629,141 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/push button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+            <element signature="e#308#1607#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#5142#5180#0" expanded="false" />
+            <element signature="e#7933#8511#0" expanded="false" />
+            <element signature="e#13000#13106#0" expanded="false" />
+            <element signature="e#13136#13242#0" expanded="false" />
+            <element signature="e#13268#13380#0" expanded="false" />
+            <element signature="e#13403#13555#0" expanded="false" />
+            <element signature="e#13577#13816#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluaciones.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Simulacion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="158" column="67" lean-forward="false" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1903#2794#0" expanded="false" />
+            <element signature="e#2855#3064#0" expanded="false" />
+            <element signature="e#3130#3349#0" expanded="false" />
+            <element signature="e#3419#3646#0" expanded="false" />
+            <element signature="e#3696#3883#0" expanded="false" />
+            <element signature="e#3941#4144#0" expanded="false" />
+            <element signature="e#4216#4447#0" expanded="false" />
+            <element signature="e#4519#4750#0" expanded="false" />
+            <element signature="e#6752#6958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generador_eventos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#345#545#0" expanded="false" />
+            <element signature="e#602#739#0" expanded="false" />
+            <element signature="e#793#867#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nota_esperada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lector_parametros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lector_escenarios.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clases.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#2428#3011#0" expanded="false" />
-            <element signature="e#3224#3262#0" expanded="false" />
-            <element signature="e#3949#4832#0" expanded="false" />
-            <element signature="e#4884#5673#0" expanded="false" />
-            <element signature="e#5725#6303#0" expanded="false" />
-            <element signature="e#6382#8343#0" expanded="false" />
-            <element signature="e#8372#8478#0" expanded="false" />
-            <element signature="e#8508#8614#0" expanded="false" />
-            <element signature="e#8640#8752#0" expanded="false" />
-            <element signature="e#8775#8927#0" expanded="false" />
-            <element signature="e#8949#9188#0" expanded="false" />
+            <element signature="e#5142#5180#0" expanded="false" />
+            <element signature="e#7933#8511#0" expanded="false" />
+            <element signature="e#13000#13106#0" expanded="false" />
+            <element signature="e#13136#13242#0" expanded="false" />
+            <element signature="e#13268#13380#0" expanded="false" />
+            <element signature="e#13403#13555#0" expanded="false" />
+            <element signature="e#13577#13816#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ayudantia interfaces graficas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ayudantia interfaces graficas.py" />
     <entry file="file://$PROJECT_DIR$/evaluaciones.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -636,7 +777,9 @@
         <state relative-caret-position="153">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#53#575#0" expanded="false" />
+            <element signature="e#345#545#0" expanded="false" />
+            <element signature="e#602#739#0" expanded="false" />
+            <element signature="e#793#867#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,24 +846,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creador parametros.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prueba.py" />
     <entry file="file://$PROJECT_DIR$/hola.py" />
     <entry file="file://$PROJECT_DIR$/ayudantia interfaces graficas.py" />
-    <entry file="file://$PROJECT_DIR$/try.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -734,80 +861,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/integrantes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/integrantes.py" />
     <entry file="file://$PROJECT_DIR$/../Programacion avanzada/work/Tareas/Tarea 0 22 03 2017/clases.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="101" column="61" lean-forward="true" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluaciones.py">
+    <entry file="file://$PROJECT_DIR$/lector_escenarios.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="61" />
-          <folding />
+        <state relative-caret-position="63">
+          <caret line="40" column="72" lean-forward="false" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clases.py">
+    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/650155932/PyQt5/QtWidgets/QLineEdit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-298">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#2428#3011#0" expanded="false" />
-            <element signature="e#3224#3262#0" expanded="false" />
-            <element signature="e#3949#4832#0" expanded="false" />
-            <element signature="e#4884#5673#0" expanded="false" />
-            <element signature="e#5725#6303#0" expanded="false" />
-            <element signature="e#6382#8343#0" expanded="false" />
-            <element signature="e#8372#8478#0" expanded="false" />
-            <element signature="e#8508#8614#0" expanded="false" />
-            <element signature="e#8640#8752#0" expanded="false" />
-            <element signature="e#8775#8927#0" expanded="false" />
-            <element signature="e#8949#9188#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="470" column="8" lean-forward="false" selection-start-line="470" selection-start-column="8" selection-end-line="470" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Simulacion.py">
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/actividad 11.py" />
+    <entry file="file://$PROJECT_DIR$/../AC11/actividad 11.py" />
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/Ay_IIC2233.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
-          <caret line="158" column="67" lean-forward="false" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
+          <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/contenido interfaces grafica.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
           <folding>
-            <element signature="e#0#91#0" expanded="true" />
-            <element signature="e#1440#2331#0" expanded="false" />
-            <element signature="e#2667#2886#0" expanded="false" />
-            <element signature="e#2956#3183#0" expanded="false" />
-            <element signature="e#3233#3420#0" expanded="false" />
-            <element signature="e#3478#3681#0" expanded="false" />
-            <element signature="e#3753#3984#0" expanded="false" />
-            <element signature="e#278#5954#0" expanded="false" />
-            <marker date="1494993834453" expanded="false" signature="2383:2601" ph="..." />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generador_eventos.py">
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/push button.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
-            <element signature="e#53#575#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Ayudantia_IIC2233-master/grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+            <element signature="e#308#1607#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lector_parametros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -821,19 +971,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lector_parametros.py">
+    <entry file="file://$PROJECT_DIR$/creador parametros.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="136">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lector_escenarios.py">
+    <entry file="file://$PROJECT_DIR$/generador_eventos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="-17">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#345#545#0" expanded="false" />
+            <element signature="e#602#739#0" expanded="false" />
+            <element signature="e#793#867#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/try.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluaciones.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#5142#5180#0" expanded="false" />
+            <element signature="e#7933#8511#0" expanded="false" />
+            <element signature="e#13000#13106#0" expanded="false" />
+            <element signature="e#13136#13242#0" expanded="false" />
+            <element signature="e#13268#13380#0" expanded="false" />
+            <element signature="e#13403#13555#0" expanded="false" />
+            <element signature="e#13577#13816#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Simulacion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1903#2794#0" expanded="false" />
+            <element signature="e#2855#3064#0" expanded="false" />
+            <element signature="e#3130#3349#0" expanded="false" />
+            <element signature="e#3419#3646#0" expanded="false" />
+            <element signature="e#3696#3883#0" expanded="false" />
+            <element signature="e#3941#4144#0" expanded="false" />
+            <element signature="e#4216#4447#0" expanded="false" />
+            <element signature="e#4519#4750#0" expanded="false" />
+            <element signature="e#6752#6958#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

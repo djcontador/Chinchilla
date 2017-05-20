@@ -1,7 +1,7 @@
+import random
 
+x = random.random()
+print(x)
+x *= 1.1
+print(x)
 
-x = None
-
-
-if not x:
-    print("cacahuate")

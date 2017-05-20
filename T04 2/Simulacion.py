@@ -1,5 +1,7 @@
+import random
 from clases import Seccion, Profesor,  Alumno, AyudanteDocente, AyudanteTareas, Coordinador
-from evaluaciones import Actividad
+from evaluaciones import Actividad, Control, Tarea, Examen
+from generador_eventos import generador_eventos_controles, generador_eventos_actividades
 from lector_parametros import Variables
 from lector_escenarios import Escenarios
 variable = Variables()
@@ -21,7 +23,7 @@ class Semestre:
         self.ayudantes = {'Docencia': [], 'Tareas': []}
         self.secciones = {}
         self.coordinador = None
-        self.contenidos = []
+        self.contenidos = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
         self.atributo_escenario = atributo_escenario  # si hay un escenario se cambiaran
 
         # parametros de base de datos
@@ -34,6 +36,13 @@ class Semestre:
         self.confianza_f = None
         self.dicc_aprobacion = {}
         self.rendimiento = {'tareas': [], 'actividades': [], 'examen': []}
+
+        # lista de eventos
+        self.calendario = [i + 1 for i in range(100)]
+
+        self.eventos = (generador_eventos_controles(self.dificultad) +
+                              generador_eventos_actividades(self.dificultad))
+        # recuerda sumar los otros eventos
 
     # parametros en escenarios.csv
     @property
@@ -118,7 +127,8 @@ class Semestre:
 
                 # crea los alumnos
                 elif linea["Rol:string"] == "Alumno":
-                    alumno = Alumno(linea['Nombre:string'], linea['Sección:string'], self.creditaje, self.dificultad)
+                    alumno = Alumno(linea['Nombre:string'], linea['Sección:string'], self.creditaje, self.dificultad,
+                                    self.nivel_inicial_confianza_superior, self.nivel_inicial_confianza_inferior)
                     self.secciones[linea['Sección:string']].agregar_alumno(alumno)
 
                 # crea los ayudantes
@@ -136,6 +146,39 @@ class Semestre:
 
     def run(self):
         self.importar_integrantes()
+        contenido = 0
+
+        for dia in self.calendario:
+            # actualizacion del nivel de programacion cada lunes
+            if (dia - 1)//7 == (dia - 1)/7 and dia <= 78:  # si el dia es un lunes
+                for seccion in self.secciones:
+                    for alumno in self.secciones[seccion].alumnos:
+                        alumno.nivel_programacion(self.contenidos[contenido])
+                contenido += 1
+
+            for evento in self.eventos:
+                # evento Control Sorpresa
+                if dia == evento[0] and evento[1]['evento'] == 'Control':
+                    for seccion in self.secciones:
+                        for alumno in self.secciones[seccion].alumnos:
+                            alumno.rendir_evaluacion(Control(evento[1]['numero'],
+                                                             evento[1]['contenido'],
+                                                             evento[1]['dificultad'],
+
+                                                             evento[1]['fecha']), self.matriz_nota_esperada)
+
+                # evento Catedra y Actividad Evaluada
+                if dia == evento[0] and evento[1]['evento'] == 'Actividad':
+                    for seccion in self.secciones:
+                        for alumno in self.secciones[seccion].alumnos:
+                            x = random.random()
+                            if x <= 0.5:  # esucho el tip del profesor
+                                alumno.manejo_contenidos[evento[1]['contenido']] *= 1.1  # incrementa en un 10%
+                            alumno.rendir_evaluacion(Actividad(evento[1]['numero'],
+                                                               evento[1]['contenido'],
+                                                               evento[1]['dificultad'],
+                                                               evento[1]['fecha']), self.matriz_nota_esperada)
+
 
 
 ###########################################################################################################
@@ -143,20 +186,78 @@ class Semestre:
 ###########################################################################################################
 print("inicia Simulacion.py")
 simulacion = Semestre()
-simulacion.run()
-matriz_nota_esperada = simulacion.matriz_nota_esperada
-print(matriz_nota_esperada)
-print(simulacion.secciones)
-evaluacion = Actividad('01', '1', simulacion.dificultad['1'], 4)
+print("eventos: ", simulacion.eventos)
+print("atributo escenario: ", simulacion.atributo_escenario)
 
+print("\nPARAMETROS de escenarios.csv")
+print("creditaje: ", simulacion.creditaje)
+print("prob_visitar_profesor: ", simulacion.prob_visitar_profesor)
+print("prob_atraso_notas_mavrakis: ", simulacion.prob_atraso_notas_mavrakis)
+print("porcentaje_progreso_tarea_mail: ", simulacion.porcentaje_progreso_tarea_mail)
+print("fiesta_mes: ", simulacion.fiesta_mes)
+print("partido_futbol_mes: ", simulacion.partido_futbol_mes)
+print("nivel_inicial_confianza_inferior: ", simulacion.nivel_inicial_confianza_inferior)
+print("nivel_inicial_confianza_superior: ", simulacion.nivel_inicial_confianza_superior)
+
+print("\n parametros.csv")
+print("dificultad: ", simulacion.dificultad)
+print("matriz notas esperadas: ")
+print('h:', simulacion.matriz_nota_esperada['header'])
+print('1:', simulacion.matriz_nota_esperada['1'])
+print('2:', simulacion.matriz_nota_esperada['2'])
+print('3:', simulacion.matriz_nota_esperada['3'])
+print('4:', simulacion.matriz_nota_esperada['4'])
+print('5:', simulacion.matriz_nota_esperada['5'])
+print('6:', simulacion.matriz_nota_esperada['6'])
+print('7:', simulacion.matriz_nota_esperada['7'])
+print('8:', simulacion.matriz_nota_esperada['8'])
+print('9:', simulacion.matriz_nota_esperada['9'])
+print('10:', simulacion.matriz_nota_esperada['10'])
+print('11:', simulacion.matriz_nota_esperada['11'])
+print('12:', simulacion.matriz_nota_esperada['12'])
+
+
+simulacion.run()
 
 for seccion in simulacion.secciones:
-    print("\n", simulacion.secciones[seccion].profesor.nombre, isinstance(simulacion.secciones[seccion].profesor, Profesor))
+    print("\n", simulacion.secciones[seccion].profesor.nombre, isinstance(simulacion.secciones[seccion].profesor,
+                                                                          Profesor))
     for alumnos in simulacion.secciones[seccion].alumnos:
-        print(alumnos.seccion, alumnos.nombre, alumnos.creditos, alumnos.personalidad)
+        if alumnos.nombre == "Daniela Contador" or alumnos.nombre == "Alfredo De Goyeneche":
+            print("\n", alumnos.nombre)
+            print("personalidad: ", alumnos.personalidad)
+            print("creditos tomados: ", alumnos.creditos)
+            print("## \nACTIVIDADES ", alumnos.nombre)
+            for evaluacion in alumnos.portafolio['actividades']:
 
-        print(alumnos.historial_hs)
-        alumnos.rendir_evaluacion(evaluacion, matriz_nota_esperada)
+                print("\nActividad {0} - contenido: {1} - dificultad: {2}".format(evaluacion.numero,
+                                                                                  evaluacion.contenido,
+                                                                                  evaluacion.dificultad))
+                #print("horas disponibles esa semana", alumnos.horas_disponibles[int(evaluacion.contenido) - 1])
+                print("horas estudiadas: ", alumnos.historial_hs[evaluacion.contenido])
+
+                print("manejo de contenidos: ", alumnos.manejo_contenidos[evaluacion.contenido])
+                print("confianza: ", alumnos.confianza)
+                print("nota esperada: {}".format(evaluacion.nota_esperada))
+                print("progreso total: {}".format(evaluacion.progreso_total))
+
+            print("horas disponibles: ", alumnos.horas_disponibles)
+            print("historial Hs: ", alumnos.historial_hs)
+            #print("confianza: ", alumnos.confianza)
+
+            print("## \nCONTROLES ", alumnos.nombre)
+            for evaluacion in alumnos.portafolio['controles']:
+                print("\nControl {0} - contenido: {1} - dificultad: {2}".format(evaluacion.numero,
+                                                                                evaluacion.contenido,
+                                                                                evaluacion.dificultad))
+                #print("horas disponibles esa semana", alumnos.horas_disponibles[int(evaluacion.contenido) - 1])
+                print("horas estudiadas: ", alumnos.historial_hs[evaluacion.contenido])
+
+                print("manejo de contenidos: ", alumnos.manejo_contenidos[evaluacion.contenido])
+                print("confianza: ", alumnos.confianza)
+                print("nota esperada: {}".format(evaluacion.nota_esperada))
+                print("progreso total: {}".format(evaluacion.progreso_total))
+
 
 
 #print("\nTareos")

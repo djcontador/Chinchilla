@@ -29,9 +29,9 @@ class Escenarios:
                 del fila['Parametro:string']
                 for escenario in fila:
                     key_escenario = escenario.split(":")
-                    # print(key_escenario[0], fila[escenario])
                     if not key_escenario[0] in matriz:  # si no existe, crea ese elemento
                         matriz[key_escenario[0]] = {}
+                        matriz[key_escenario[0]][parametro] = fila[escenario]
                     else:
                         matriz[key_escenario[0]][parametro] = fila[escenario]
 
@@ -39,7 +39,6 @@ class Escenarios:
                 for parametro in matriz[escenario]:
                     if matriz[escenario][parametro] == '-':
                         valor = Escenarios.parametros_default[parametro]
-                        # print("cambio de {0} a {1} en {2}".format(matriz[escenario][parametro], valor, parametro))
                         matriz[escenario][parametro] = valor
                     else:
                         valor = float(matriz[escenario][parametro])

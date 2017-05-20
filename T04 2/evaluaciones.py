@@ -1,16 +1,29 @@
 import random
 
 
-portafolio = {'tareas': [], 'actividades': [], 'controles': [], 'examen': []}
-
-
 class Evaluacion:
+    """
+    Corresponde a todas las clases madres de las evaluaciones, crea los atributos necesarios
+    para reconocer el rendimiento y la asignacion de notas para los alumnos
+    """
     def __init__(self, numero, contenido, dificultad, fecha):
+        """
+        :param numero: numero de la evaluacion. Por ejemplo: Tarea 01, Control 07, etc.
+        :type numero: str
+        :param contenido: identificador del contenido a evaluar en aquella evaluacion. Los contenidos se encuentran
+        enumerados del 1 al 12 en funcion del cuadro 3 del enunciado.
+        :type contenido: str
+        :param dificultad: parametro obtenido de Parametros_dificultad.csv que indica la dificultad del contenido
+        :type dificultad: int
+        :param fecha: dia del semestre en que ocurre el evento evaluacion
+        :type fecha: int
+        """
         self.numero = numero
         self.contenido = contenido
         self.dificultad = dificultad
         self.fecha = fecha
 
+        self.bonificacion_personalidad = 0
         self.nota_esperada = None
         self.nota_real = None
         self.progreso_total = None

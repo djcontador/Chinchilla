@@ -37,3 +37,5 @@ class Variables:
                 diccionario1[key] = valor
             Variables.diccionario1 = diccionario1
         self.diccionario_dificultad = Variables.diccionario1
+
+# print(Variables().diccionario_dificultad)
