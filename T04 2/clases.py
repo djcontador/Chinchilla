@@ -1,5 +1,6 @@
 import random
 from evaluaciones import Tarea, Control, Actividad, Examen
+from functools import reduce
 
 
 class Alumno:
@@ -36,12 +37,17 @@ class Alumno:
         self.dicc_nivel_programacion = {'1': random.randint(2, 10)}
         self.personalidad = random.choice(Alumno.personalidades)
         self.portafolio = {'tareas': [], 'actividades': [], 'controles': [], 'examen': []}
+        # promedio por cada semana
+        # semana 1 : promedio
+        self.promedio_semanal = {'tareas': [], 'actividades': [], 'examen': [], 'controles': []}
         self.rendimiento = {'contenido1': 0, 'contenido2': 0}  # arreglar
         self.visitas_profesor = {'1': 0, '2': 0, '3': 0, '4': 0, '5': 0, '6': 0,
                                  '7': 0, '8': 0, '9': 0, '10': 0, '11': 0, '12': 0}
-        self.asistencias_fiesta = {'1': 0, '2': 0, '3': 0, '4': 0, '5': 0, '6': 0,
-                                   '7': 0, '8': 0, '9': 0, '10': 0, '11': 0, '12': 0}
+        self.asistencias_fiesta = []
         self.estado = 'en curso'  # en curso, retirado, aprobado, reprobado
+        self.promedio = {'1': None, '2': None, '3': None, '4': None, '5': None, '6': None, '7': None, '8': None,
+                         '9': None, '10': None, '11': None, '12': None, '13': None, '14': None, '15': None, '16': None}
+
 
         # cantidad de creditos tomados
         x = random.random()
@@ -59,17 +65,12 @@ class Alumno:
             creditos = prob_ordenada[3][1]
             self.creditos = creditos
 
-        # horas semanales disponibles
-        # self.hs_anterior = 0
-        # self.hs_actual = self.h() * 0.3
-        # self.ht_anterior = 0
-        # self.ht_actual = 1 - self.hs_actual
-        # self.historial_horas_semanales = [self.hs_actual]
-
-        self.horas_disponibles = [(1, self.h()), (2, self.h()), (3, self.h()), (4, self.h()),
-                                  (5, self.h()), (6, self.h()), (7, self.h()), (8, self.h()),
-                                  (9, self.h()), (10, self.h()), (11, self.h()), (12, self.h())]
+        self.horas_disponibles = []
+        #[(1, self.h()), (2, self.h()), (3, self.h()), (4, self.h()),
+        #                          (5, self.h()), (6, self.h()), (7, self.h()), (8, self.h()),
+        #                          (9, self.h()), (10, self.h()), (11, self.h()), (12, self.h())]
         self.manejo_contenidos = {}
+        self.calculador_horas_disponibles()
         self.creador_manejo_contenidos()
 
     def h(self):
@@ -88,46 +89,59 @@ class Alumno:
         else:
             return random.uniform(5, 10)
 
-    def nivel_programacion(self, contenido, v=0, w=0):
+    def calculador_horas_disponibles(self):
+        """
+        crea una lista de duplas semana / cantidad horas disponibles, y las horas disponibles,
+        que estan en funcion de la cantidad de creditos que tomo el alumno y si asistira o no a una fiesta
+        esa semana.
+        :return: lista de duplas semana / cantidad horas disponibles
+        :rtype: list
+        """
+        lista = []
+        for i in range(16):
+            semana = i + 1
+            if str(semana) in self.asistencias_fiesta:
+                # como fue a fiesta, se quitan 2 dias de estudio de ese contenido (o semana)
+                h_disponibles = self.h()
+                h_disponibles_descontadas = (h_disponibles / 7) * 2
+                h_reales = h_disponibles - h_disponibles_descontadas
+                lista.append((semana, h_reales))
+                # print("{0} disminuyo de {1} a {2} horas disponibles por asistir a fiesta en la semana {3}".format(self.nombre, h_disponibles, h_reales, semana))
+            else:
+                lista.append((semana, self.h()))
+        self.horas_disponibles = lista
+
+    def nivel_programacion(self, contenido):
         """
         Actualiza el atributo dicc_nivel_programacion con el nivel calculado para la semana correspondiente
         al contenido entregado, y modifica el nivel de programacion en funcion de las probabilidades v y w
         (si ocurrieron los eventos "reunirse con el profesor" o "el alumno va a una fiesta")
         :param contenido: numero del contenido que se evalua en la semana
         :type contenido: str
-        :param v: probabilidad de que el alumna se reuna con el profesor
-        :type v: float
-        :param w: probabilidad de que el alumno vaya a una fiesta
-        :type w: float
         :return: nivel de programación actual
         :rtype: float
         """
+
         if contenido == '1':
+            if contenido in self.asistencias_fiesta:
+                antiguo = self.dicc_nivel_programacion[contenido]
+                self.dicc_nivel_programacion[contenido] = antiguo * 0.9
+                return self.dicc_nivel_programacion[contenido]
             return self.dicc_nivel_programacion[contenido]
+
         else:
-            nivel_antiguo = self.dicc_nivel_programacion[str(int(contenido)-1)]
-            nivel_nuevo = 1.05 * nivel_antiguo * (1 + v - w)
-            self.dicc_nivel_programacion[contenido] = nivel_nuevo
-            return nivel_nuevo
-        pass
+            if contenido in self.asistencias_fiesta:
+                # descuento por asistir a una parranda (fiesta)
+                nivel_antiguo = self.dicc_nivel_programacion[str(int(contenido) - 1)]
+                nivel_nuevo = 1.05 * nivel_antiguo * (1 - 0.15)
+                self.dicc_nivel_programacion[contenido] = nivel_nuevo
+                return nivel_nuevo
+            else:  # no hubo fiesta ni partido
+                nivel_antiguo = self.dicc_nivel_programacion[str(int(contenido)-1)]
+                nivel_nuevo = 1.05 * nivel_antiguo
+                self.dicc_nivel_programacion[contenido] = nivel_nuevo
+                return nivel_nuevo
 
-    #def actualizar_datos_semanales(self):
-    #    """
-    #    Actualiza los atributos de horas disponibles para tareas(ht) y contenidos(hs),
-    #    es decir, calcula cuantas horas puede dedicarle a la semana actual, y setea lo
-    #    que fue calculado para la semana anterior
-    #    :return: ??????????????????????????????????????????????????????????????????????????????????????????????????
-    ##    :rtype: None
-     #   """
-     #   self.hs_anterior = self.hs_actual
-     #   self.hs_actual = self.h() * 0.3
-     ##   self.historial_horas_semanales.append(self.hs_actual)
-      ##  self.ht_anterior = self.ht_actual
-       # self.ht_actual = 1 - self.hs_actual
-
-    # no debe ser una property, porque no deja modificar en otras partes
-    # hacer una funcion que me cree el diccionario manejor de contenidos, y luego guardarlo
-    # en self.manejo_contenidos_
     def creador_manejo_contenidos(self):
         """
         corresponde a un diccionario del manejo de contenidos para cada contenido
@@ -187,6 +201,48 @@ class Alumno:
                     retorno[contenido] = self.horas_disponibles[indice][1] * 0.7
         return retorno
 
+    @property
+    def nivel_programacion_promedio(self):
+        pass
+
+    def entregar_tarea(self, arg_numero, porcentaje_progreso_tarea_mail):
+        """
+        se calcula el progreso obtenido, y se aumenta el avance del alumno en funcion de su personalidad mediante la
+        funcion progreso()
+        :param arg_numero: numero de la tarea a entregar
+        :return: retorna si se realiza la entrega o no, de realizarse retorna True, y si retorna False, es porque
+        intentaran atrasar la entrega
+        :rtype: bool
+        """
+        # calcular la nota esperada cuando tengan que entregar la tarea ******
+        for tarea in self.portafolio['tareas']:
+            if arg_numero == tarea.numero:
+                key_contenido = tarea.contenido
+                evaluacion = tarea
+        nota_esperada_contenido_1 = None
+        nota_esperada_contenido_2 = None
+        for actividad in self.portafolio['actividades']:
+            if actividad.contenido == key_contenido[0]:
+                nota_esperada_contenido_1 = actividad.nota_esperada
+            elif actividad.contenido == key_contenido[1]:
+                nota_esperada_contenido_2 = actividad.nota_esperada
+        nota_esperada = (nota_esperada_contenido_1 + nota_esperada_contenido_2) / 2
+        evaluacion.nota_esperada = nota_esperada
+
+        # definicion del progreso realizado para la tarea
+        manejo_contenidos = (self.manejo_contenidos[key_contenido[0]] + self.manejo_contenidos[key_contenido[1]]) / 2
+        horas_tarea = self.historial_ht[key_contenido[0]] + self.historial_ht[key_contenido[1]]
+        evaluacion.progreso(manejo_contenidos, self.dicc_nivel_programacion[key_contenido[1]], horas_tarea, self.personalidad)
+
+        # true o false si se quiere atrasar la entrega
+        progreso_esperado = evaluacion.exigencia * porcentaje_progreso_tarea_mail
+        progreso_realizado = evaluacion.progreso_total
+        if progreso_realizado < progreso_esperado:
+            print(self.nombre, " envia mail pidiendo mas plazo")
+            return False
+        elif progreso_realizado >= progreso_esperado:
+            return True
+
     def rendir_evaluacion(self, evaluacion, matriz_notas_esperadas):
         """
         permite guardar todas las variables necesarias para el calculo de notas y estadisticas
@@ -203,42 +259,25 @@ class Alumno:
         """
         key_contenido = evaluacion.contenido
 
-        # nota esperada
-        horas = int(self.historial_hs[key_contenido])
-        intervalo_horas = matriz_notas_esperadas[key_contenido]
+        if not isinstance(evaluacion, Tarea):
+            horas = int(self.historial_hs[key_contenido])
+            intervalo_horas = matriz_notas_esperadas[key_contenido]
 
-        rango_horas = list(filter(lambda rango: horas in rango, intervalo_horas))
+            rango_horas = list(filter(lambda rango: horas in rango, intervalo_horas))
 
-        if len(rango_horas) == 0:
-            #print("puse en 7.0 ({0}) en el contenido {1}".format(matriz_notas_esperadas['header'][3], key_contenido))
-            #print("intervalo_horas: ", matriz_notas_esperadas[key_contenido])
-            intervalo_notas = matriz_notas_esperadas['header'][3]
-        else:
-            for i in range(4):
-                if key_contenido == '4' and self.nombre == "Daniela Contador":
-                    print("rango horas: ", rango_horas)
-                    print("matriz_notas_esperadas[key_contenido][i]: ", matriz_notas_esperadas[key_contenido][i])
-
-                if matriz_notas_esperadas[key_contenido][i] == rango_horas[0]:
-                    intervalo_notas = matriz_notas_esperadas['header'][i]
-                    if key_contenido == '4' and self.nombre == "Daniela Contador":
-                        print("intervalo notas: ", intervalo_notas)
-        nota = random.uniform(float(intervalo_notas[0]), float(intervalo_notas[1]))
-        if self.nombre == "Daniela Contador":
-            print("nota esperada: ", nota)
-            print("en la evaluacion: ", evaluacion.numero)
-        evaluacion.nota_esperada = round(nota, 1)
-        if self.nombre == "Daniela Contador":
-            print("NOTA ESPERAADAA:::: evaluacion {0}, tipo {1}, nota esperada: {2}, hs: {3}".format(evaluacion.numero,
-                                                                                                    evaluacion.tipo,
-                                                                                                    evaluacion.nota_esperada,
-                                                                                                    self.historial_hs[evaluacion.contenido]))
+            if len(rango_horas) == 0:
+                intervalo_notas = matriz_notas_esperadas['header'][3]
+            else:
+                for i in range(4):
+                    if matriz_notas_esperadas[key_contenido][i] == rango_horas[0]:
+                        intervalo_notas = matriz_notas_esperadas['header'][i]
+            nota = random.uniform(float(intervalo_notas[0]), float(intervalo_notas[1]))
+            evaluacion.nota_esperada = round(nota, 1)
 
         # agregacion de la evaluacion al portafolio, asignacion del progreso
-        # y de las bonificaciones por personalidad
+        # y de las bonificaciones por personalidad en las actividades
         if isinstance(evaluacion, Tarea):
-            ####evaluacion.progreso(self.manejo_contenidos[key_contenido])
-            # modificar funcion progreso para la tarea
+            # solo se entrega la tarea al alumno en su portafolio, no se calcula el progreso aun
             self.portafolio['tareas'].append(evaluacion)
 
         elif isinstance(evaluacion, Control):
@@ -267,6 +306,7 @@ class Alumno:
             self.portafolio['examen'].append(evaluacion)
 
 
+
 class AyudanteTareas:
     def __init__(self, nombre):
         self.nombre = nombre
@@ -278,8 +318,104 @@ class AyudanteTareas:
 class AyudanteDocente:
     def __init__(self, nombre):
         self.nombre = nombre
+        self.contenidos_dominados = random.sample([str(i+1) for i in range(12)], 3)
 
-    def corregir(self, evaluacion):
+    def corregir(self, alumno, evaluacion):
+        """
+        calcula la nota obtenida en la evaluacion, y actualiza el promedio del alumno que lleva hasta el momento
+        :param alumno: objeto alumno que esta cursando avanzacion programada
+        :type alumno: object
+        :param evaluacion: objeto de evaluacion a corregir y calcular la nota, que fue rendido por el alumno
+        :type evaluacion: object
+        :return:
+        :rtype: None
+        """
+        nota = max(((evaluacion.progreso_total/evaluacion.exigencia) * 7) + evaluacion.bonificacion_personalidad, 1)
+
+        evaluacion.nota_real = nota
+
+        # calculo del promedio actual
+        semana_actual = ""
+        promedio = None
+        prom_actividades = 0
+        prom_controles = 0
+        prom_tareas = 0
+        n_actividades_corregidas = 0
+        n_controles_corregidos = 0
+        n_tareas_corregidas = 0
+
+        if len(alumno.portafolio['actividades']) > 0:
+            for actividad in alumno.portafolio['actividades']:
+                if alumno.nombre == "Daniela Contador":
+                    print("actividad {}".format(actividad.tipo + " " + actividad.numero), actividad.nota_real)
+                if actividad.nota_real:  # si esque la actividad fue corregida (si nota_real no es None)
+                    prom_actividades += actividad.nota_real
+                    n_actividades_corregidas += 1
+            if n_actividades_corregidas > 0:
+                prom_actividades /= n_actividades_corregidas
+
+        if len(alumno.portafolio['controles']) > 0:
+            for control in alumno.portafolio['controles']:
+                if alumno.nombre == "Daniela Contador":
+                    print("control {}".format(control.tipo + " " + control.numero), control.nota_real)
+                if control.nota_real:
+                    prom_controles += control.nota_real
+                    n_controles_corregidos += 1
+            if n_controles_corregidos > 0:
+                prom_controles /= n_controles_corregidos
+
+        if len(alumno.portafolio['tareas']) > 0:
+            for tarea in alumno.portafolio['tareas']:
+                if tarea.nota_real:
+                    prom_tareas += tarea.nota_real
+                    n_tareas_corregidas += 1
+            if n_tareas_corregidas > 0:
+                prom_tareas /= n_tareas_corregidas
+
+        examen_corregido = 0
+
+        if alumno.nombre == 'Daniela Contador':
+            print(alumno.portafolio)
+            print('prom act: ', prom_actividades)
+            print('prom controles: ', prom_controles)
+            print('prom tareas', prom_tareas)
+
+        if examen_corregido == 0:
+            if n_tareas_corregidas == 0 and n_controles_corregidos == 0:
+                # solo tiene actividades
+                promedio = prom_actividades
+            elif n_tareas_corregidas == 0:
+                # tiene actividades y controles
+                promedio = (0.25 / 0.45) * prom_actividades + (0.2 / 0.45) * prom_controles
+            elif n_controles_corregidos == 0:
+                # tiene actividades y tareas
+                promedio = (0.25 / 0.65) * prom_actividades + (0.4 / 0.65) * prom_tareas
+        elif n_controles_corregidos == 0:
+            # tiene actividades, tareas y examen
+            promedio = (0.25 / 0.8) * prom_actividades + (0.4 / 0.8) * prom_tareas + \
+                       (0.15 / 0.8) * alumno.portafolio['examen'].nota_real
+        else:
+            # tiene actividades, tareas, controles y examen
+            promedio = 0.25 * prom_actividades + 0.4 * prom_tareas + 0.2 * prom_controles + \
+                       0.15 * alumno.portafolio['examen'].nota_real
+
+        #alumno.promedio = promedio
+        #alumno.promedio[semana_actual] = promedio
+        # aqui el alumno se entera de su nota, entonces varia su nivel de confianza
+
+        if alumno.nombre == 'Daniela Contador':
+            print("promedio total actual: ", alumno.promedio)
+
+
+
+
+
+
+
+
+
+
+
         pass
 
 
@@ -287,7 +423,22 @@ class Coordinador:
     def __init__(self, nombre):
         self.nombre = nombre
 
-    def publicar_notas(self, notas, dia):
+    def publicar_notas(self, evaluacion, secciones, dia):
+        notas_reales = []
+        notas_descontadas = []
+        notas = {evaluacion: {'notas reales': notas_reales, 'notas descontadas': notas_descontadas, 'dia de entrega': dia}}
+
+        # si las publica instantaneamente:
+        for seccion in secciones:
+            for alumno in secciones[seccion].alumnos:
+                # publica notas, entonces el alumno publica su promedio
+                pass
+            pass
+        pass
+
+        # seccion 2
+
+        # seccion 3
         pass
 
 
